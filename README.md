@@ -27,4 +27,4 @@ The application also keeps track of the total number of guesses. A reset button 
 ## ▶️ How to Run
 1. Compile the program:
    ```bash
-   javac guihw1.java
+   javac number_guessing_game.java
