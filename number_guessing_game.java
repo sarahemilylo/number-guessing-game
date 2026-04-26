@@ -27,18 +27,24 @@ public class number_guessing_game implements ActionListener{
 			theGuess.setText("");
 			theLabel.setText("");
 		}else{
-			int intGuess = Integer.parseInt(theGuess.getText()); 
-			intGuesses += 1;
-			
-			if(intGuess > intNumber){
-				theLabel.setText("Too HIGH");
-			}else if(intGuess < intNumber){
-				theLabel.setText("Too LOW");
-			}else{
-				theLabel.setText("You got it! The number was: " + intNumber);
+			try{
+				int intGuess = Integer.parseInt(theGuess.getText()); 
+				intGuesses += 1;
+				
+				if(intGuess > intNumber){
+					theLabel.setText("Too HIGH");
+				}else if(intGuess < intNumber){
+					theLabel.setText("Too LOW");
+				}else{
+					theLabel.setText("You got it! The number was: " + intNumber);
+				}
+				theGuess.setText("");
+				numGuesses.setText("Your guesses: " + intGuesses);
 			}
-			theGuess.setText("");
-			numGuesses.setText("Your guesses: " + intGuesses);
+			catch(NumberFormatException e){
+				theLabel.setText("Error: enter a valid number");
+				theGuess.setText("");
+			}
 		}
 	}
 	
