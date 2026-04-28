@@ -1,5 +1,9 @@
 # 🎯 Number Guessing Game
 
+![Java](https://img.shields.io/badge/Language-Java-blue.svg)
+![GUI](https://img.shields.io/badge/GUI-Swing-green.svg)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen.svg)
+
 ## 📝 Description
 This is a simple GUI-based number-guessing game built with Java Swing.  
 The program generates a random number between **1 and 100**, and the user attempts to guess it using a text input field.
